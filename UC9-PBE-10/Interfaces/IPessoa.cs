@@ -3,10 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace UC9_PBE_10.Interfaces
+namespace Cadastro_Pessoas_PBE10.Interfaces
 {
     public interface IPessoa
     {
-        float PagarImposto(float Rendimento);
+       /// <summary>
+       /// método para calcular imposto
+       /// </summary>
+       /// <param name="rendimento">rendimento para basear o calculo de imposto</param>
+       /// <returns>valor do imposto a ser pago</returns>
+        float PagarImposto(float rendimento);
     }
 }

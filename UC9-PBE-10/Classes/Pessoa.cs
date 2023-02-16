@@ -1,14 +1,14 @@
-using UC9_PBE_10.Interfaces;
+using Cadastro_Pessoas_PBE10.Interfaces;
 
-namespace UC9_PBE_10.Classes
+namespace Cadastro_Pessoas_PBE10.Classes
 {
-    public abstract class Pessoa : IPessoa 
+    //classe pessoa e ela é a superclasse
+    public abstract class Pessoa : IPessoa
     {
-         public string? Nome { get; set; }
+        //atributos da classe Pessoa
+        public string? Nome { get; set; }
         public Endereco? Endereco { get; set; }
         public float Rendimento { get; set; }
-
-        public abstract float PagarImposto(float Rendimento);
-        
+        public abstract float PagarImposto(float rendimento);        
     }
 }
